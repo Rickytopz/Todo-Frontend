@@ -1,0 +1,96 @@
+/* General container styling */
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Dark mode toggle button */
+.toggleBtn {
+  padding: 8px 12px;
+  background: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Input section */
+.inputSection {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* ✅ FIX: Scoped input styling */
+.inputField {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ✅ FIX: Scoped button styling */
+.addButton {
+  padding: 8px 12px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.addButton:hover {
+  background: darkblue;
+}
+
+/* Task List */
+.taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.taskList li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Dark mode styles for tasks */
+.dark .taskList li {
+  background: #333;
+}
+
+.dark .taskList li.completed span {
+  color: #888;
+}
